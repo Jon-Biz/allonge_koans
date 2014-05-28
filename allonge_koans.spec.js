@@ -94,7 +94,30 @@ describe("chapter 1:", function() {
 
 	  });
 	});
-	xdescribe("functions with no arguments in their bodies:", function() {
-	  
+	xdescribe("functions with no arguments and their bodies:", function() {
+	  it("the return keyword should return a value", function() {
+
+	    expect(
+	    	function(){return 0}
+    	).toEqual(
+
+    	);
+
+	    expect(
+	    	function(){return 1}
+    	).toEqual(
+
+    	);
+
+	    expect(
+	    	function(){return 'Hello World'}
+    	).toEqual(
+
+    	);
+
+	  });
+	});
+	describe("functions that evaluate to functions", function() {
+	  });
 	});
 });
