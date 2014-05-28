@@ -53,8 +53,8 @@ describe("chapter 1:", function() {
 
 			expect(
 				undefined
-			).not.toEqual(
-				undefined
+			).toEqual(
+				''
 			);
 
 			expect(
@@ -65,37 +65,37 @@ describe("chapter 1:", function() {
 
 			expect(
 				(function() {})()
-			).not.toEqual(
-				undefined
+			).toEqual(
+				''
 			);
 
 		});
 	});
-	xdescribe("void:", function() {
+	describe("void:", function() {
 	  it("there is a third way to generate undefined in javascript", function() {
 
 			expect(
 				void 0
-			).not.toEqual(
-				undefined
+			).toEqual(
+				""
 			);
 
 			expect(
 				void 1
-			).not.toEqual(
-				undefined
+			).toEqual(
+				""
 			);
 
 			expect(
 				void (2+2)
-			).not.toEqual(
-				undefined
+			).toEqual(
+				""
 			);
 
 	  });
 	});
 	xdescribe("functions with no arguments and their bodies:", function() {
-	  it("the return keyword should return a value", function() {
+	  it("the return keyword should return value", function() {
 
 	    expect(
 	    	function(){return 0}
@@ -118,6 +118,5 @@ describe("chapter 1:", function() {
 	  });
 	});
 	describe("functions that evaluate to functions", function() {
-	  });
 	});
 });
